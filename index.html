@@ -786,6 +786,24 @@
       filter: brightness(1.1);
     }
 
+    /* ─── V3 TERTIARY BUTTON ─── */
+    .btn-download-v3 {
+      background: linear-gradient(135deg, #ff1f5a 0%, #ff521f 55%, #ff1f5a 100%);
+      background-size: 200% auto;
+      color: #ffffff;
+      box-shadow:
+        0 6px 30px rgba(255,31,90,0.45),
+        0 2px 8px rgba(255,31,90,0.3),
+        inset 0 1px 0 rgba(255,255,255,0.25);
+      animation: btnGradShift 3s linear infinite;
+    }
+    .btn-download-v3:hover {
+      box-shadow:
+        0 12px 45px rgba(255,31,90,0.6),
+        0 4px 16px rgba(255,31,90,0.4);
+      filter: brightness(1.1);
+    }
+
     .btn-youtube {
       background: #ff0000;
       color: #ffffff;
@@ -1088,10 +1106,21 @@
             </div>
           </div>
 
-          <!-- Second Video Frame (New) -->
+          <!-- Second Video Frame -->
           <div style="width: 100%; max-width: 800px; border-radius: var(--radius-lg); overflow: hidden; border: 1px solid var(--border); box-shadow: 0 10px 40px var(--glow-red);">
             <div style="position: relative; padding-bottom: 56.25%; height: 0;">
               <iframe src="https://www.youtube.com/embed/Mer7j_gMjTc" 
+                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+              </iframe>
+            </div>
+          </div>
+
+          <!-- Third Video Frame -->
+          <div style="width: 100%; max-width: 800px; border-radius: var(--radius-lg); overflow: hidden; border: 1px solid var(--border); box-shadow: 0 10px 40px var(--glow-red);">
+            <div style="position: relative; padding-bottom: 56.25%; height: 0;">
+              <iframe src="https://www.youtube.com/embed/YOUR_NEW_VIDEO_ID_HERE" 
                 style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" 
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                 allowfullscreen>
@@ -1242,7 +1271,17 @@
         
         <!-- V2 PACK LINK -->
         <a href="https://shrinkme.click/J79K9" class="btn btn-download-v2" target="_blank" onclick="closeModal()">
-          <i class="fa-solid fa-rocket"></i> Download V2 Pack (New)
+          <i class="fa-solid fa-rocket"></i> Download V2 Pack
+        </a>
+
+        <!-- V3 PACK LINK -->
+        <a href="https://shrinkme.click/933NQL5R" class="btn btn-download-v3" target="_blank" onclick="closeModal()">
+          <i class="fa-solid fa-fire"></i> Download V3 Pack
+        </a>
+        
+        <!-- EMULATOR OPTIMIZER LINK -->
+        <a href="https://shrinkme.click/fkiUHL" class="btn btn-download" target="_blank" onclick="closeModal()">
+          <i class="fa-solid fa-microchip"></i> Download Emulator Optimizer
         </a>
       </div>
     </div>
